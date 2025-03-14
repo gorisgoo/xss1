@@ -1,3 +1,5 @@
 <script>
-console.log("XSS found on " + window.origin);
+var script = document.createElement('script');
+script.innerHTML = `alert("XSS Payload");`;
+document.body.appendChild(script);
 </script>
