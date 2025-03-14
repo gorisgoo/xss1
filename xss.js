@@ -1,3 +1,3 @@
 <script>
-console.log("XSS found on " + window.location.href);
+console.log("XSS found on " + window.origin);
 </script>
